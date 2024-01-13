@@ -1,4 +1,4 @@
-package com.example.mypersonalapp.ui.home;
+package com.example.mypersonalapp.ui.my_water_reminder;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,14 +12,14 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.mypersonalapp.databinding.FragmentHomeBinding;
 
-public class HomeFragment extends Fragment {
+public class MyWaterReminderFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        MyWaterReminderViewModel homeViewModel =
+                new ViewModelProvider(this).get(MyWaterReminderViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
